@@ -12,7 +12,7 @@ import StableDiffusion
 import CoreML
 
 let DEFAULT_MODEL = ModelInfo.v2Base
-let DEFAULT_PROMPT = "Labrador in the style of Vermeer"
+let DEFAULT_PROMPT = "Super cute fluffy cat warrior in armor, photorealistic, 4K, ultra detailed, vray rendering, unreal engine."
 
 enum GenerationState {
     case startup

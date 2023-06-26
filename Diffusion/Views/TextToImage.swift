@@ -124,6 +124,14 @@ struct TextToImage: View {
                 .padding()
                 .buttonStyle(.borderedProminent)
             }
+            HStack {
+                Text("seed")
+                TextField("seed", value: $generation.seed, formatter: NumberFormatter())
+                    .keyboardType(.numberPad).textFieldStyle(.roundedBorder)
+                Text("steps")
+                TextField("steps", value: $generation.steps, formatter: NumberFormatter())
+                    .keyboardType(.numberPad).textFieldStyle(.roundedBorder)
+            }
             ImageWithPlaceholder(state: $generation.state)
                 .scaledToFit()
             Spacer()
